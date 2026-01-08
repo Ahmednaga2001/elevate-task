@@ -21,8 +21,7 @@ const Post = () => {
 
   const filteredPosts = posts.filter((post) => {
     const matchesSearch = !searchQuery.trim() || post.title.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesAuthor = !selectedAuthor || post.userId === parseInt(selectedAuthor, 10);
-    return matchesSearch && matchesAuthor;
+    return matchesSearch;
   });
 
   const pageCount = Math.ceil(filteredPosts.length / 10);
@@ -35,7 +34,7 @@ const Post = () => {
 
   useEffect(() => {
     setCurrentPage(0);
-  }, [searchQuery, selectedAuthor]);
+  }, [searchQuery]);
 
   if (loading) return (
     <div 
@@ -110,7 +109,8 @@ const Post = () => {
             id="author-filter"
             value={selectedAuthor}
             onChange={(e) => setSelectedAuthor(e.target.value)}
-            className="flex-1 lg:flex-initial bg-white rounded-lg sm:rounded-xl p-3 sm:p-4 text-sm sm:text-base text-black border-none outline-none cursor-pointer focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            disabled
+            className="flex-1 lg:flex-initial bg-white rounded-lg sm:rounded-xl p-3 sm:p-4 text-sm sm:text-base text-black border-none outline-none cursor-not-allowed opacity-60 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             aria-label="Filter posts by author"
           >
             <option value="">All Authors</option>
