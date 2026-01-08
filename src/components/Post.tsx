@@ -109,8 +109,7 @@ const Post = () => {
             id="author-filter"
             value={selectedAuthor}
             onChange={(e) => setSelectedAuthor(e.target.value)}
-            disabled
-            className="flex-1 lg:flex-initial bg-white rounded-lg sm:rounded-xl p-3 sm:p-4 text-sm sm:text-base text-black border-none outline-none cursor-not-allowed opacity-60 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            className="flex-1 lg:flex-initial bg-white rounded-lg sm:rounded-xl p-3 sm:p-4 text-sm sm:text-base text-black border-none outline-none "
             aria-label="Filter posts by author"
           >
             <option value="">All Authors</option>
