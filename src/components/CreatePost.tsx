@@ -78,8 +78,8 @@ const CreatePost = () => {
         <h1 id="create-post-heading" className="text-xl font-semibold text-black">Create a New Post</h1>
       </div>
 
-      <div className="max-w-212 m-6 bg-white rounded-xl min-h-[789px]">
-        <form onSubmit={handleSubmit(onSubmit)} className="p-6" noValidate aria-label="Create new post form">
+      <div className="max-w-212 m-6 bg-white rounded-xl lg:min-h-[789px]">
+        <form onSubmit={handleSubmit(onSubmit)} className="md:p-6 p-4" noValidate aria-label="Create new post form">
           <div className="space-y-6">
             <div>
               <label
