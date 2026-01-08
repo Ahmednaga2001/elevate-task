@@ -100,7 +100,7 @@ const Post = () => {
             placeholder="Search for a post..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full bg-transparent text-sm sm:text-base text-black outline-none placeholder:text-[#00000080]/50 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded"
+            className="w-full bg-transparent text-sm sm:text-base text-black outline-none border-none placeholder:text-[#00000080]/50 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded"
             aria-label="Search for a post"
           />
         </div>
