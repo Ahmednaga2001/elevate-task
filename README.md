@@ -164,22 +164,7 @@ The application fetches posts from the [JSONPlaceholder API](https://jsonplaceho
 - Keyboard navigation support
 - Focus management
 
-## Future Improvements
 
-- [ ] Add edit/update functionality for posts
-- [ ] Add delete functionality for posts
-- [ ] Implement user authentication
-- [ ] Add comments section for posts
-- [ ] Implement real-time updates using WebSockets
-- [ ] Add unit and integration tests
-- [ ] Implement error boundaries for better error handling
-- [ ] Add loading skeletons for better UX
-- [ ] Implement infinite scroll as an alternative to pagination
-- [ ] Add dark mode support
-- [ ] Implement post categories/tags
-- [ ] Add image upload functionality
-- [ ] Implement search history
-- [ ] Add export functionality (CSV, JSON)
 
 ## License
 
